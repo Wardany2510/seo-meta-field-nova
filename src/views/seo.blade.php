@@ -25,16 +25,20 @@ if(!empty($seo['params'])){
     @if(isset($seo['description']) && $seo['description'])
     <meta name="description" content="{{ $seo['description'] }}" />
     @endif
-
     @if(isset($seo['keywords']) && $seo['keywords'])
     <meta name="keywords" content="{{ $seo['keywords'] }}" />
     @endif
-
+    @if(!empty($seo['title']))
     <meta property="og:title" content="{{ $seo['title'] }}" />
+    <meta name="twitter:title" content="{{ $seo['title'] }}" />
+    @endif
+    @if(!empty($seo['description']))
     <meta property="og:description" content="{{ $seo['description'] }}" />
-
+    <meta name="twitter:description" content="{{ $seo['description'] }}" />
+    @endif
     @if(!empty($seo['image_path']))
     <meta property="og:image" content="{{ $seo['image_path'] }}" />
+    <meta name="twitter:image" content="{{ $seo['image_path'] }}" />
     @endif
 @else
 <meta name="robots" content="{{ !empty($seo['follow_type']) && config('seo.seo_status') ? $seo['follow_type'] : 'noindex, nofollow' }}" />

@@ -40,6 +40,7 @@ if(!empty($seo['params'])){
     <meta property="og:image" content="{{ $seo['image_path'] }}" />
     <meta name="twitter:image" content="{{ $seo['image_path'] }}" />
     @endif
+
 @else
 <meta name="robots" content="{{ !empty($seo['follow_type']) && config('seo.seo_status') ? $seo['follow_type'] : 'noindex, nofollow' }}" />
 @endif

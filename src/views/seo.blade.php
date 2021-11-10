@@ -19,7 +19,9 @@ if(!empty($seo['params'])){
 }
 @endphp
 
-<title>{{ $seo['title'] }}</title>
+@if(isset($seo['title']))
+  <title>{{ $seo['title'] }}</title>
+@endif
 
 @if(config('seo.seo_status'))
     @if(isset($seo['description']) && $seo['description'])

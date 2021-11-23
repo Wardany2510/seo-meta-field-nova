@@ -45,7 +45,7 @@ class SeoMeta extends Field
         $this->file_disk = config('seo.disk');
 
         $this->withMeta([
-            'hostname'     => url(''),
+            'hostname'     => config('seo.url'),
             'title_format' => config('seo.title_formatter'),
             'follow_type_options' => config('seo.follow_type_options'),
         ]);

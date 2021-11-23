@@ -16,7 +16,7 @@
                         <div class="seo-meta-detail__google__title">{{ seoTitle }}</div>
                         <div
                             class="seo-meta-detail__google__url"
-                        >{{ (field.url || field.hostname).replace(/:\/\//, ':||').replace(/(\/)/g, ' › ').replace(':||', '://') }}</div>
+                        >{{ (field.hostname).replace(/:\/\//, ':||').replace(/(\/)/g, ' › ').replace(':||', '://') }}</div>
                         <div
                             class="seo-meta-detail__google__description"
                         >{{ field.value.description }}</div>

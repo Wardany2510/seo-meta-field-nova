@@ -13,7 +13,8 @@ return [
     */
 
     'seo_status' => env('SEO_STATUS', true),
-
+    
+    'url' => env('APP_URL', ''),
     /*
     |--------------------------------------------------------------------------
     | Sitemap status

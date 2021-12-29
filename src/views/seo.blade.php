@@ -33,7 +33,7 @@ if(!empty($seo['params'])){
     <meta name="description" content="{{ $seo['description'] }}" />
     <meta property="og:description" content="{{ $seo['description'] }}" />
     <meta name="twitter:description" content="{{ $seo['description'] }}" />
-    <meta name="twitter:card" content="{{ $seo['description'] }}">
+    <meta name="twitter:card" content="summary_large_image">
     @endif
     @if(isset($seo['keywords']) && $seo['keywords'])
     <meta name="keywords" content="{{ $seo['keywords'] }}" />

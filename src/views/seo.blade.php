@@ -27,7 +27,7 @@ if(!empty($seo['params'])){
 <meta name="twitter:site" content="{{config('app.name', 'Laravel')}}">
 <meta property="og:site_name" content="{{config('app.name', 'Laravel')}}" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="{{request()->path()}}" />
+<meta property="og:url" content="{{url(request()->path())}}" />
 @if(config('seo.seo_status'))
     @if(isset($seo['description']) && $seo['description'])
     <meta name="description" content="{{ $seo['description'] }}" />

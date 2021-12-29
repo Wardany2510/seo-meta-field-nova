@@ -47,7 +47,7 @@ if(!empty($seo['params'])){
     <meta property="og:image" content="{{ $seo['image_path'] }}" />
     <meta name="twitter:image" content="{{ $seo['image_path'] }}" />
     <meta name="twitter:image:src" content="{{ $seo['image_path'] }}">
-<-- Twitter Summary card images must be at least 120x120px -->
+    {{-- Twitter Summary card images must be at least 120x120px --}}
     @endif
 
    
